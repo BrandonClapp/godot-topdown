@@ -7,10 +7,10 @@ path="res://.import/Lobby.tmx-f07c9bf76b261662d2a7a16765c8754f.scn"
 [deps]
 
 source_file="res://tiles/Lobby.tmx"
-source_md5="534eab310ef7430f7804d7188d65a8e3"
+source_md5="d93dc7e38cd1c2a5219c78e06c4f0d81"
 
 dest_files=[ "res://.import/Lobby.tmx-f07c9bf76b261662d2a7a16765c8754f.scn" ]
-dest_md5="0bfad0002ff6194e010ccf254ce91edc"
+dest_md5="7ca85526d91801904224dec72d5224e4"
 
 [params]
 
