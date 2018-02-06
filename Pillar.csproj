@@ -42,18 +42,19 @@
       <HintPath>$(ProjectDir)\.mono\assemblies\GodotSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="GodotSharpEditor" Condition=" '$(Configuration)' == 'Tools' ">
-      <HintPath>$(ProjectDir)\.mono\assemblies\GodotSharpEditor.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="GodotSharpEditor">
+      <HintPath>.mono\assemblies\GodotSharpEditor.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Character.cs" />
     <Compile Include="Gem.cs" />
     <Compile Include="main.cs" />
+    <Compile Include="Network\NetworkAdapter.cs" />
     <Compile Include="Player.cs" />
-    <Compile Include="PlayerSprite.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server.cs" />
     <Compile Include="UniqueRandom.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
