@@ -3,10 +3,7 @@ extends KinematicBody2D
 var animated_sprite
 var is_interactable
 var speed = 300
-
 var interactable_target
-var dest_x
-var dest_y
 var screen_size
 
 func _ready():
