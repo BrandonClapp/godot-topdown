@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Character.cs" type="Script" id=1]
+[ext_resource path="res://Character.gd" type="Script" id=1]
 [ext_resource path="res://tiles/blue-circle-right.png" type="Texture" id=2]
 [ext_resource path="res://tiles/blue-circle-up.png" type="Texture" id=3]
 
@@ -18,17 +18,17 @@ animations = [ {
 "speed": 1.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=4]
 
 custom_solver_bias = 0.0
-extents = Vector2( 43.9097, 12.8006 )
+extents = Vector2( 32.7316, 32.382 )
 
 [sub_resource type="CircleShape2D" id=3]
 
 custom_solver_bias = 0.0
 radius = 32.6489
 
-[node name="Character" type="KinematicBody2D" index="0"]
+[node name="Character" type="KinematicBody2D"]
 
 position = Vector2( 511.062, 288.122 )
 input_pickable = true
@@ -36,10 +36,10 @@ collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="Sprite" type="AnimatedSprite" parent="." index="0"]
 
-editor/display_folded = true
 frames = SubResource( 1 )
 animation = "right"
 _sections_unfolded = [ "Transform" ]
@@ -58,9 +58,7 @@ audio_bus_name = "Master"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/Interaction" index="0"]
 
-position = Vector2( 13.3699, -2.62531 )
-scale = Vector2( 1, 2.73307 )
-shape = SubResource( 2 )
+shape = SubResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
@@ -147,9 +145,5 @@ editor_draw_screen = true
 editor_draw_limits = false
 editor_draw_drag_margin = false
 _sections_unfolded = [ "Drag Margin", "Limit", "Smoothing" ]
-
-[connection signal="area_shape_entered" from="Sprite/Interaction" to="." method="_on_Interaction_area_shape_entered"]
-
-[connection signal="area_shape_exited" from="Sprite/Interaction" to="." method="_on_Interaction_area_shape_exited"]
 
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.2" orientation="orthogonal" renderorder="left-down" width="100" height="100" tilewidth="32" tileheight="32" infinite="0" nextobjectid="25">
+<map version="1.0" tiledversion="1.1.2" orientation="orthogonal" renderorder="left-down" width="100" height="100" tilewidth="32" tileheight="32" infinite="0" nextobjectid="31">
  <tileset firstgid="1" name="Grass" tilewidth="32" tileheight="32" tilecount="4" columns="2">
   <image source="grid-tile.png" width="64" height="64"/>
  </tileset>
@@ -335,6 +335,7 @@
     <property name="dest_map" value="Lobby"/>
     <property name="dest_tile_x" type="int" value="339"/>
     <property name="dest_tile_y" type="int" value="1295"/>
+    <property name="type" value="door"/>
    </properties>
   </object>
   <object id="24" name="door_2" type="area" x="320.589" y="1433.29" width="62.1266" height="7.96495">
@@ -342,6 +343,7 @@
     <property name="dest_map" value="Lobby"/>
     <property name="dest_tile_x" type="int" value="852"/>
     <property name="dest_tile_y" type="int" value="505"/>
+    <property name="type" value="door"/>
    </properties>
   </object>
  </objectgroup>
